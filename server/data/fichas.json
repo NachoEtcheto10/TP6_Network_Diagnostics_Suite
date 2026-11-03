@@ -1,0 +1,44 @@
+[
+  {
+    "code": "NDS-ONT-0001",
+    "tipo": "ONT GPON",
+    "modelo": "ONT GPON 4GE + WiFi 2.4/5GHz",
+    "fabricante": "Generico (laboratorio)",
+    "serie": "LAB0001A7F3",
+    "firmware": "V5R020C10S115",
+    "gestion": { "ip": "192.168.100.1", "snmp": "v2c / community public", "ssh": "puerto 22" },
+    "potenciaOpticaEsperada": "-8 a -27 dBm",
+    "notas": "Verificar potencia optica RX antes de cerrar la instalacion."
+  },
+  {
+    "code": "NDS-RTR-0002",
+    "tipo": "Router de borde",
+    "modelo": "Router 5x GbE",
+    "fabricante": "Generico (laboratorio)",
+    "serie": "LAB0002C19B",
+    "firmware": "7.14.2",
+    "gestion": { "ip": "192.168.88.1", "snmp": "v2c / community public", "ssh": "puerto 22" },
+    "notas": "Respaldar configuracion antes de cualquier cambio."
+  },
+  {
+    "code": "NDS-SW-0003",
+    "tipo": "Switch de acceso",
+    "modelo": "Switch 24p FE + 2 SFP",
+    "fabricante": "Generico (laboratorio)",
+    "serie": "LAB0003FF20",
+    "firmware": "15.0(2)SE11",
+    "gestion": { "ip": "192.168.100.2", "snmp": "v2c / community public", "ssh": "puerto 22" },
+    "notas": "VLAN 1 de gestion. Puertos 1-12 clientes, 25-26 uplink."
+  },
+  {
+    "code": "NDS-ANT-0004",
+    "tipo": "Antena PtP 5GHz",
+    "modelo": "Radio PtP 5GHz 23dBi",
+    "fabricante": "Generico (laboratorio)",
+    "serie": "LAB0004AB01",
+    "firmware": "8.7.11",
+    "gestion": { "ip": "192.168.1.20", "snmp": "v1 / community public", "ssh": "puerto 22" },
+    "senalEsperada": "-55 a -65 dBm",
+    "notas": "Alinear con la referencia de azimut del relevamiento."
+  }
+]

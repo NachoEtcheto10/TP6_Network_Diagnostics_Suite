@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Network Diagnostics Suite",
+    "slug": "network-diagnostics-suite",
+    "scheme": "nds",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ar.edu.tp6.nds",
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "Se usa para descubrir y diagnosticar equipos de la red local."
+      }
+    },
+    "android": {
+      "package": "ar.edu.tp6.nds",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F172A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sharing",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Se usa para escanear el QR de los equipos y fotografiar la instalacion."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Se usa para georreferenciar fotos y reportes de instalacion."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Se usa para adjuntar fotos de la instalacion."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
